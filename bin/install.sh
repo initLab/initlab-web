@@ -47,6 +47,7 @@ wp option update wordpress_api_key df2237efb5cb
 wp plugin activate akismet
 wp plugin install --activate loco-translate
 wp plugin install --activate wordpress-importer
+wp plugin install --activate https://github.com/initLab/initlab-addons/archive/master.zip
 
 # theme plugins
 wp plugin install --activate alx-extensions
