@@ -30,7 +30,7 @@ wp post delete 1 2 3 --force
 wp user meta update admin show_welcome_panel 0
 
 # general options
-wp option update blogdescription 'the hackerspace of Sofia'
+wp option update blogdescription 'Sofia'\''s Hackerspace'
 wp option update date_format d.m.Y
 wp option update time_format H:i
 wp option update timezone_string Europe/Sofia
@@ -47,6 +47,12 @@ wp option update wordpress_api_key df2237efb5cb
 wp plugin activate akismet
 wp plugin install --activate loco-translate
 wp plugin install --activate wordpress-importer
+
+# theme plugins
+wp plugin install --activate alx-extensions
+wp plugin install --activate meta-box
+wp plugin install --activate regenerate-thumbnails
+wp plugin install --activate wp-pagenavi
 
 # theme
 wp option update fresh_site 0
