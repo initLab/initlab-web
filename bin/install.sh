@@ -42,18 +42,32 @@ wp option update blog_public 0
 
 # plugins
 wp plugin uninstall hello
-wp plugin install --activate classic-editor
 wp option update wordpress_api_key df2237efb5cb
 wp plugin activate akismet
-wp plugin install --activate loco-translate
-wp plugin install --activate wordpress-importer
+wp plugin install --activate broken-link-checker
+wp plugin install --activate classic-editor
+wp plugin install --activate contact-form-7
+wp plugin install --activate events-manager
+# TODO: WPML
+#wp plugin install --activate events-manager-wpml
 wp plugin install --activate https://github.com/initLab/initlab-addons/archive/master.zip
-
-# theme plugins
-wp plugin install --activate alx-extensions
-wp plugin install --activate meta-box
+wp plugin install --activate better-wp-security
+wp plugin install --activate loco-translate
+wp plugin install --activate mainwp-child
+wp plugin install --activate ninja-forms
+wp plugin install --activate siteorigin-panels
+wp plugin install --activate redirection
 wp plugin install --activate regenerate-thumbnails
+wp plugin install --activate responsive-lightbox
+wp plugin install --activate simple-google-analytics-tracking
+wp plugin install --activate so-widgets-bundle
+wp plugin install --activate underconstruction
+wp plugin install --activate updraftplus
+wp plugin install --activate user-role-editor
+wp plugin install --activate wpremote
 wp plugin install --activate wp-pagenavi
+wp plugin install --activate duplicate-post
+wp plugin install --activate wordpress-importer
 
 # theme
 wp option update fresh_site 0
